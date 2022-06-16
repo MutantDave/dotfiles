@@ -14,7 +14,7 @@
     ~/.config/nvim/init.vim: init.vim
 
 - shell:
-    - command: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    - command: /bin/bash install-homebrew.sh
       description: Installing Homebrew
     - command: rm -rf ~/.tmux/plugins/tpm && git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
       description: installing tpm
