@@ -12,6 +12,7 @@
     ~/.tmux.conf: tmux.conf
     ~/.config/nvim/autoload/plug.vim: plug.vim
     ~/.config/nvim/init.vim: init.vim
+    ~/.config/cs-zsh/sheets: cheatsheets
 
 - shell:
     - command: /bin/bash install-nord.sh
@@ -30,6 +31,8 @@
       description: Add cmdtime
     - command: ./omz-install wookayin/fzf-fasd
       description: Add fzf-fasd
+    - command: ./omz-install 0b10/cheatsheet
+      description: Add cheatsheet
     - command: ~/.tmux/plugins/tpm/bin/install_plugins
       description: Installing tmux plugins
     - command: curl -L https://foundry.paradigm.xyz | bash

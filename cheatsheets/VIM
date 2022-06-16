@@ -1,0 +1,50 @@
+# Some guidance, but not absolutely necessary:
+#
+#   * Keep columns 8 tabs apart.
+#   * Provide a space after each section.
+#   * Underlines are the width of the word.
+#   * Try to keep descriptions within a single line.
+#
+# The cheatsheet will be displayed exactly as you see it here - as a flat text file.
+# Comments are ignored, but only if they occupy the entire line on their own -
+#  trailing comments are not ignored.
+#
+j k  - Up Down
+h l - Left Right
+
+i - insert
+a - insert after
+
+Shift-i - beginning of the line
+Shift-a - end of the line
+
+f[char] - jump on character
+t[char] - jump TO character (before)
+dt[char] - delete up to character
+(shifts go backwards)
+; - walk through results
+, - walk backwards
+
+x - delete single character
+s - delete single char + insert
+
+w - forward by word
+b - back by word
+$ - end of line
+^ - beginning of line
+
+* - next occurrence of whatever is under the cursor
+# - prev occurrence 
+
+yy - yank line
+p - paste
+dd - delete line
+c - delete but then insert mode
+
+O - newline + insert above
+o - newline + insert below
+
+u - undo
+
+Shift - v - Visual Mode (current line)
+v - Visual Mode (current spot)
