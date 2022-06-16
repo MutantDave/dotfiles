@@ -12,6 +12,7 @@ export EDITOR='nvim'
 
 
 plugins=(
+  cmdtime
   zsh-autocomplete
   zsh-syntax-highlighting
   z

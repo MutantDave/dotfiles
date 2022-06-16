@@ -28,8 +28,13 @@
       description: Add ZSH syntax highlighting
     - command: ./omz-install marlonrichert/zsh-autocomplete
       description: Add ZSH autocomplete
+    - command: ./omz-install tom-auger/cmdtime
+      description: Add cmdtime
     - command: ~/.tmux/plugins/tpm/bin/install_plugins
       description: Installing tmux plugins
+    - command: curl -L https://foundry.paradigm.xyz | bash
+      description: Installing Foundry/Forge (solidity)
+    - command: foundryup
     - command: chsh -s $(which zsh)
       description: Changing default shell to zsh
 
