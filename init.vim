@@ -21,6 +21,8 @@ colorscheme nord
 
 let g:prettier#quickfix_enabled = 0
 
+let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -l -g ""'
+
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.vue,*.svelte,*.yaml,*.html Prettier
 
 " Source Vim configuration file and install plugins
@@ -56,3 +58,4 @@ noremap <Right> <Nop>
 
 " No highlight
 :set nohlsearch
+
