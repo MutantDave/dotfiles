@@ -1,7 +1,15 @@
 - clean: ["~"]
 
 - link:
+    ~/.zshrc: zshrc
     ~/.gitconfig: gitconfig
     ~/.tmux.conf: tmux.conf
     ~/.config/nvim/autoload/plug.vim: plug.vim
     ~/.config/nvim/init.vim: init.vim
+
+- shell:
+    - command: curl -sS https://starship.rs/install.sh | sh -s -- -y --force
+      description: Installing starship 🚀
+      stdin: false
+      stdout: false
+      quiet: false
