@@ -1,7 +1,7 @@
-- clean: ['~']
+- clean: ["~"]
 
 - link:
     ~/.gitconfig: gitconfig
     ~/.tmux.conf: tmux.conf
-
-
+    ~/.config/nvim/autoload/plug.vim: plug.vim
+    ~/.config/nvim/init.vim: init.vim
