@@ -11,3 +11,4 @@ brew "git-lfs"
 brew "git"
 brew "htop"
 brew "the_silver_searcher"
+brew 'starship'
