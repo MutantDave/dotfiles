@@ -33,8 +33,6 @@
     - command: curl -L https://foundry.paradigm.xyz | bash
       description: Installing Foundry/Forge (solidity)
     - command: foundryup
-    - command: chsh -s $(which zsh)
-      description: Changing default shell to zsh
 
 - brewfile:
     - Brewfile
