@@ -10,6 +10,7 @@ export HOMEBREW_NO_ENV_HINTS=true
 alias vim='nvim'
 export EDITOR='nvim'
 
+
 plugins=(
   zsh-autocomplete
   zsh-syntax-highlighting
@@ -17,5 +18,5 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-
 alias ls='ls -Gltra'
+
