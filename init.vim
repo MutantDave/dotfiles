@@ -16,7 +16,7 @@ Plug 'tomlion/vim-solidity'
 call plug#end()
 
 syntax on
-set relativenumber
+set number relativenumber
 colorscheme nord
 
 let g:prettier#quickfix_enabled = 0
