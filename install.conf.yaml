@@ -28,6 +28,8 @@
       description: Add ZSH autocomplete
     - command: ./omz-install tom-auger/cmdtime
       description: Add cmdtime
+    - command: ./omz-install wookayin/fzf-fasd
+      description: Add fzf-fasd
     - command: ~/.tmux/plugins/tpm/bin/install_plugins
       description: Installing tmux plugins
     - command: curl -L https://foundry.paradigm.xyz | bash

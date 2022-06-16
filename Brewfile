@@ -12,3 +12,4 @@ brew "git"
 brew "htop"
 brew "the_silver_searcher"
 brew 'starship'
+brew 'node'
