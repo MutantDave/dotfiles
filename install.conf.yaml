@@ -1,3 +1,8 @@
+- defaults:
+    - brewfile:
+        - stdout: true
+        - stderr: true
+
 - clean: ["~"]
 
 - link:
@@ -8,8 +13,14 @@
     ~/.config/nvim/init.vim: init.vim
 
 - shell:
+    - command: rm -rf ~/.tmux/plugins/tpm && git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+      description: installing tpm
     - command: curl -sS https://starship.rs/install.sh | sh -s -- -y --force
       description: Installing starship 🚀
-      stdin: false
-      stdout: false
-      quiet: false
+    - command: rm -rf ~/.oh-my-zsh && sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended --keep-zshrc
+      description: Installing oh-my-zsh
+
+- install-brew: true
+
+- brewfile:
+    - Brewfile
