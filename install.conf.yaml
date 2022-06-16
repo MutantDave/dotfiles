@@ -14,6 +14,8 @@
     ~/.config/nvim/init.vim: init.vim
 
 - shell:
+    - command: /bin/bash install-nord.sh
+      description: Installing Nord Terminal Colors
     - command: /bin/bash install-homebrew.sh
       description: Installing Homebrew
     - command: rm -rf ~/.tmux/plugins/tpm && git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
@@ -22,6 +24,10 @@
       description: Installing starship 🚀
     - command: rm -rf ~/.oh-my-zsh && sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended --keep-zshrc
       description: Installing oh-my-zsh
+    - command: ~/.tmux/plugins/tpm/bin/install_plugins
+      description: Installing tmux plugins
+    - command: chsh -s /bin/zsh
+      description: Changing default shell to zsh
 
 - brewfile:
     - Brewfile
