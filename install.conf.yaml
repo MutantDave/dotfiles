@@ -31,8 +31,6 @@
       description: Add cmdtime
     - command: ./omz-install wookayin/fzf-fasd
       description: Add fzf-fasd
-    - command: ./omz-install 0b10/cheatsheet
-      description: Add cheatsheet
     - command: ~/.tmux/plugins/tpm/bin/install_plugins
       description: Installing tmux plugins
     - command: curl -L https://foundry.paradigm.xyz | bash

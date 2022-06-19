@@ -9,7 +9,6 @@ eval "$(starship init zsh)"
 test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
 
 plugins=(
-  cheatsheet
   cmdtime
   fzf-fasd
   zsh-autocomplete
