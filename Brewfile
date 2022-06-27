@@ -13,3 +13,4 @@ brew "htop"
 brew "the_silver_searcher"
 brew 'starship'
 brew 'node@16'
+brew 'jq'
