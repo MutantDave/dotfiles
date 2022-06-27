@@ -35,6 +35,10 @@ nnoremap <silent><leader>1 :source $MYVIMRC \| :PlugInstall<CR>
 " CoC extensions
 let g:coc_global_extensions = ['coc-tsserver']
 
+" indentLine
+let g:vim_json_conceal=0
+let g:markdown_syntax_conceal=0
+
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
