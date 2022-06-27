@@ -16,6 +16,7 @@ Plug 'tomlion/vim-solidity'
 Plug 'preservim/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
+Plug 'Yggdroot/indentLine'
 call plug#end()
 
 syntax on
@@ -48,7 +49,7 @@ nmap <leader>qf  <Plug>(coc-fix-current)
 
 " Shortcuts to common commands I use
 nmap <leader>b :GoBuild<CR>
-nmap <leader>f :Explore<CR>
+nmap <leader>f :NERDTree<CR>
 nmap <leader>p :Files!<CR>
 
 " Disable arrow keys
