@@ -36,6 +36,9 @@
     - command: curl -L https://foundry.paradigm.xyz | bash
       description: Installing Foundry/Forge (solidity)
     - command: foundryup
+      description: Updating Foundry/Forge (solidity)
+    - command: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+      description: Installing rust
 
 - brewfile:
     - Brewfile
