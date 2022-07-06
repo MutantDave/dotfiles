@@ -15,10 +15,10 @@
     ~/.config/cs-zsh/sheets: cheatsheets
 
 - shell:
-    - command: /bin/bash install-nord.sh
-      description: Installing Nord Terminal Colors
     - command: /bin/bash install-homebrew.sh
       description: Installing Homebrew
+    - command: /bin/bash install-nord.sh
+      description: Installing Nord Terminal Colors
     - command: rm -rf ~/.tmux/plugins/tpm && git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
       description: installing tpm
     - command: rm -rf ~/.oh-my-zsh && sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended --keep-zshrc

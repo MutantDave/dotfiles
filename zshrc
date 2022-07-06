@@ -1,6 +1,7 @@
 export ZSH=$HOME/.oh-my-zsh
+export BREWPATH=$(brew --prefix)
 export GOPATH="$HOME/go"
-export PATH="/opt/homebrew/opt/node@16/bin:/opt/homebrew/bin:$PATH:$HOME/.foundry/bin:$GOPATH/bin:$HOME/.cargo/bin"
+export PATH="$BREWPATH/opt/node@16/bin:$BREWPATH/bin:$PATH:$HOME/.foundry/bin:$GOPATH/bin:$HOME/.cargo/bin"
 export HOMEBREW_NO_ENV_HINTS=true
 export EDITOR='nvim'
 alias vim='nvim'
