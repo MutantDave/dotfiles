@@ -46,8 +46,10 @@
       description: Add fzf-fasd
     - command: ~/.tmux/plugins/tpm/bin/install_plugins
       description: Installing tmux plugins
-    - command: PATH=$PATH:$HOME/.foundry/bin curl -L https://foundry.paradigm.xyz | bash
+    - command: curl -L https://foundry.paradigm.xyz | bash
       description: Installing Foundry/Forge (solidity)
+    - command: git checkout HEAD -- zshrc
+      description: Reset Foundry's intrusive zshrc update
     - command: $HOME/.foundry/bin/foundryup
       description: Updating Foundry/Forge (solidity)
     - command: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
