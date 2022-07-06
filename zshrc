@@ -7,6 +7,7 @@ export PATH="$HOMEBREW_PATH/bin:$PATH:/opt/homebrew/opt/node@16/bin"
 
 export HOMEBREW_NO_ENV_HINTS=true
 export EDITOR='nvim'
+
 alias vim='nvim'
 
 eval "$(starship init zsh)"
