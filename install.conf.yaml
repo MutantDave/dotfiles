@@ -7,18 +7,26 @@
 - clean: ["~"]
 
 - link:
-    ~/.zshrc: zshrc
+    ~/.zshrc:
+      force: true
+      path: zshrc
+      relink: true
     ~/.gitconfig: gitconfig
     ~/.tmux.conf: tmux.conf
-    ~/.config/nvim/autoload/plug.vim: plug.vim
-    ~/.config/nvim/init.vim: init.vim
-    ~/.config/cs-zsh/sheets: cheatsheets
+    ~/.config/nvim/autoload/plug.vim:
+      create: true
+      path: plug.vim
+      relink: true
+    ~/.config/nvim/init.vim:
+      create: true
+      path: init.vim
+      relink: true
 
 - shell:
-    - command: /bin/bash install-nord.sh
-      description: Installing Nord Terminal Colors
     - command: /bin/bash install-homebrew.sh
       description: Installing Homebrew
+    - command: /bin/bash install-nord.sh
+      description: Installing Nord Terminal Colors
     - command: rm -rf ~/.tmux/plugins/tpm && git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
       description: installing tpm
     - command: rm -rf ~/.oh-my-zsh && sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended --keep-zshrc
@@ -33,9 +41,9 @@
       description: Add fzf-fasd
     - command: ~/.tmux/plugins/tpm/bin/install_plugins
       description: Installing tmux plugins
-    - command: curl -L https://foundry.paradigm.xyz | bash
+    - command: PATH=$PATH:$HOME/.foundry/bin curl -L https://foundry.paradigm.xyz | bash
       description: Installing Foundry/Forge (solidity)
-    - command: foundryup
+    - command: $HOME/.foundry/bin/foundryup
       description: Updating Foundry/Forge (solidity)
     - command: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
       description: Installing rust
