@@ -19,11 +19,19 @@ plugins=(
   zsh-syntax-highlighting
   zsh-autosuggestions
   z
+  brew
+  ipfs
+  docker
+  docker-compose
+  tmux
+  yarn
+  npm
+  fancy-ctrl-z
+  aws
+  macos
 )
 
 source $ZSH/oh-my-zsh.sh
 
 # Must be down here because omz overwrites
 alias ls='ls -Gltra'
-alias ta='tmux a -t'
-alias ts='tmux ls'
