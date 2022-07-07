@@ -11,6 +11,7 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
 Plug 'github/copilot.vim'
 Plug 'tomlion/vim-solidity'
 Plug 'preservim/nerdtree'

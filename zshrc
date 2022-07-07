@@ -17,7 +17,7 @@ plugins=(
   cmdtime
   fzf-fasd
   zsh-syntax-highlighting
-  zsh-autosuggestions
+  zsh-autocomplete
   z
   brew
   ipfs
