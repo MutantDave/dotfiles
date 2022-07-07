@@ -16,8 +16,8 @@ test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
 plugins=(
   cmdtime
   fzf-fasd
-  zsh-autocomplete
   zsh-syntax-highlighting
+  zsh-autosuggestions
   z
 )
 

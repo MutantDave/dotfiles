@@ -38,7 +38,7 @@
       description: Installing oh-my-zsh
     - command: ./omz-install zsh-users/zsh-syntax-highlighting
       description: Add ZSH syntax highlighting
-    - command: ./omz-install marlonrichert/zsh-autocomplete
+    - command: ./omz-install zsh-users/zsh-autosuggestions
       description: Add ZSH autocomplete
     - command: ./omz-install tom-auger/cmdtime
       description: Add cmdtime
