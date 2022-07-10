@@ -31,6 +31,9 @@ plugins=(
   macos
 )
 
+zstyle ':completion:*' list-prompt   ''
+zstyle ':completion:*' select-prompt ''
+
 source $ZSH/oh-my-zsh.sh
 
 # Must be down here because omz overwrites

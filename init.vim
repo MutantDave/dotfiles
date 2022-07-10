@@ -55,7 +55,7 @@ nmap <leader>ac  <Plug>(coc-codeaction)
 nmap <leader>qf  <Plug>(coc-fix-current)
 
 " Shortcuts to common commands I use
-nmap <leader>b :GoBuild<CR>
+nmap <leader>b <c-^><cr>
 nmap <leader>f :NERDTree<CR>
 nmap <leader>p :Files!<CR>
 
