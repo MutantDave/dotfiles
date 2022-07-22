@@ -19,6 +19,7 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
 Plug 'Yggdroot/indentLine'
 Plug 'rust-lang/rust.vim'
+Plug 'dense-analysis/ale'
 call plug#end()
 
 syntax on
@@ -27,6 +28,10 @@ set number relativenumber
 colorscheme nord
 
 let g:prettier#quickfix_enabled = 0
+let g:ale_linters = {
+\   'javascript': ['prettier'],
+\   'rust' : ['rustc', 'analyzer']
+\}
 
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -l -g ""'
 
