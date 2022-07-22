@@ -30,6 +30,7 @@ colorscheme nord
 let g:prettier#quickfix_enabled = 0
 let g:ale_linters = {
 \   'javascript': ['prettier'],
+\   'typescript': ['prettier'],
 \   'rust' : ['rustc', 'analyzer']
 \}
 
