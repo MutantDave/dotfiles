@@ -8,8 +8,6 @@ export PATH="$HOMEBREW_PATH/bin:$PATH:$HOMEBREW_PATH/opt/node@16/bin"
 export HOMEBREW_NO_ENV_HINTS=true
 export EDITOR='nvim'
 
-alias vim='nvim'
-
 eval "$(starship init zsh)"
 test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
 
@@ -38,3 +36,5 @@ source $ZSH/oh-my-zsh.sh
 
 # Must be down here because omz overwrites
 alias ls='ls -Gltra'
+alias vim='nvim'
+alias t2='tree -L 2'

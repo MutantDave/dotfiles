@@ -6,7 +6,7 @@ Plug 'pangloss/vim-javascript'    " JavaScript support
 Plug 'leafgarland/typescript-vim' " TypeScript syntax
 Plug 'maxmellon/vim-jsx-pretty'   " JS and JSX syntax
 Plug 'jparise/vim-graphql'        " GraphQL syntax
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'do': ':CocInstall coc-tsserver coc-rust-analyzer'}
 Plug 'arcticicestudio/nord-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -18,9 +18,11 @@ Plug 'preservim/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
 Plug 'Yggdroot/indentLine'
+Plug 'rust-lang/rust.vim'
 call plug#end()
 
 syntax on
+filetype plugin indent on
 set number relativenumber
 colorscheme nord
 
@@ -28,13 +30,14 @@ let g:prettier#quickfix_enabled = 0
 
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -l -g ""'
 
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.vue,*.svelte,*.yaml,*.html,*.rs Prettier
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.vue,*.svelte,*.yaml,*.html Prettier
+autocmd BufWritePre *.rs RustFmt
 
 " Source Vim configuration file and install plugins
 nnoremap <silent><leader>1 :source $MYVIMRC \| :PlugInstall<CR>
 
 " CoC extensions
-let g:coc_global_extensions = ['coc-tsserver']
+let g:coc_global_extensions = ['coc-rust-analyzer', 'coc-tsserver']
 
 " indentLine
 let g:vim_json_conceal=0
@@ -55,7 +58,7 @@ nmap <leader>qf  <Plug>(coc-fix-current)
 " Shortcuts to common commands I use
 nmap <leader>b <c-^><cr>
 nmap <leader>f :NERDTree<CR>
-nmap <leader>p :Files!<CR>
+nmap <leader>p :Files<CR>
 
 " Disable arrow keys
 noremap <Up> <Nop>
@@ -72,6 +75,7 @@ noremap <Right> <Nop>
 :set nohlsearch
 
 :set splitbelow splitright
+
 " Remap splits navigation to just CTRL + hjkl
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
