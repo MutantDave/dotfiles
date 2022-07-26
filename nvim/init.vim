@@ -32,6 +32,8 @@ colorscheme nord
 :set shiftwidth=2
 :set expandtab
 
+autocmd FileType solidity setlocal shiftwidth=4 tabstop=4
+
 let g:prettier#quickfix_enabled = 0
 let g:ale_linters = {
 \   'javascript': ['prettier'],
