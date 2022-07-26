@@ -32,9 +32,10 @@ let g:ale_linters = {
 \   'javascript': ['prettier'],
 \   'typescript': ['prettier'],
 \   'rust' : ['rustc', 'analyzer'],
-\   'solidity' : ['solc'],
+\   'solidity' : ['solc', 'solium'],
 \}
 
+" Solidity Things
 let g:ale_solidity_solc_options = '--base-path ./ --include-path ./lib'
 
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -l -g ""'
