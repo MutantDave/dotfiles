@@ -31,7 +31,8 @@ let g:prettier#quickfix_enabled = 0
 let g:ale_linters = {
 \   'javascript': ['prettier'],
 \   'typescript': ['prettier'],
-\   'rust' : ['rustc', 'analyzer']
+\   'rust' : ['rustc', 'analyzer'],
+\   'solidity' : ['solium'],
 \}
 
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -l -g ""'

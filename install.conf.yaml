@@ -54,3 +54,5 @@
       description: Updating Foundry/Forge (solidity)
     - command: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
       description: Installing rust
+    - command: npm install -g ethlint
+      description: Installing Ethlint
