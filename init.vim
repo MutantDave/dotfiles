@@ -32,7 +32,7 @@ let g:ale_linters = {
 \   'javascript': ['prettier'],
 \   'typescript': ['prettier'],
 \   'rust' : ['rustc', 'analyzer'],
-\   'solidity' : ['solium'],
+\   'solidity' : ['solc'],
 \}
 
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -l -g ""'
