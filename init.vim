@@ -36,7 +36,7 @@ let g:ale_linters = {
 \}
 
 " Solidity Things
-let g:ale_solidity_solc_options = '--base-path ./ --include-path ./lib'
+let g:ale_solidity_solc_options = '--base-path ./ --include-path ./lib $(forge remappings)'
 
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -l -g ""'
 
