@@ -7,16 +7,17 @@
 - clean: ["~"]
 
 - link:
+    ~/.config/nvim:
+      create: true
+      path: nvim
+      relink: true
+      force: true
     ~/.zshrc:
       force: true
       path: zshrc
       relink: true
     ~/.gitconfig: gitconfig
     ~/.tmux.conf: tmux.conf
-    ~/.config/nvim/init.vim:
-      create: true
-      path: init.vim
-      relink: true
 
 - shell:
     - command: /bin/bash install-homebrew.sh
@@ -26,8 +27,7 @@
     - Brewfile
 
 - shell:
-    - command: curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
-      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    - command: curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
       description: Installing plug.vim
     - command: /bin/bash install-nord.sh
       description: Installing Nord Terminal Colors
@@ -53,5 +53,5 @@
       description: Updating Foundry/Forge (solidity)
     - command: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
       description: Installing rust
-    - command: npm install -g solium
+    - command: npm install -g --force solium
       description: Installing solidity linter
