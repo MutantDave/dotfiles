@@ -27,6 +27,11 @@ filetype plugin indent on
 set number relativenumber
 colorscheme nord
 
+" Format defaults: 2 spaces
+:set tabstop=2
+:set shiftwidth=2
+:set expandtab
+
 let g:prettier#quickfix_enabled = 0
 let g:ale_linters = {
 \   'javascript': ['prettier'],
@@ -75,11 +80,6 @@ noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
-
-" Format defaults: 2 spaces
-:set tabstop=2
-:set shiftwidth=2
-:set expandtab
 
 " No highlight
 :set nohlsearch
