@@ -1,6 +1,7 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+tap "ethereum/ethereum"
 brew "delve"
 brew "fzf"
 brew "neovim"
@@ -16,3 +17,4 @@ brew 'jq'
 brew 'awscli'
 brew 'libusb'
 brew 'yarn'
+brew 'solidity'

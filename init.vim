@@ -35,6 +35,8 @@ let g:ale_linters = {
 \   'solidity' : ['solc'],
 \}
 
+let g:ale_solidity_solc_options = '--base-path ./ --include-path ./lib'
+
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -l -g ""'
 
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.vue,*.svelte,*.yaml,*.html Prettier
