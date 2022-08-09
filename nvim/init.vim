@@ -8,6 +8,7 @@ Plug 'maxmellon/vim-jsx-pretty'   " JS and JSX syntax
 Plug 'jparise/vim-graphql'        " GraphQL syntax
 Plug 'neoclide/coc.nvim', {'do': ':CocInstall coc-tsserver coc-rust-analyzer'}
 Plug 'arcticicestudio/nord-vim'
+Plug 'EdenEast/nightfox.nvim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-surround'
@@ -25,7 +26,7 @@ call plug#end()
 syntax on
 filetype plugin indent on
 set number relativenumber
-colorscheme nord
+colorscheme nightfox
 
 " Format defaults: 2 spaces
 :set tabstop=2
@@ -70,12 +71,16 @@ nmap <silent> gr <Plug>(coc-references)
 nmap <leader>ac  <Plug>(coc-codeaction)
 
 " Apply AutoFix to problem on the current line.
-nmap <leader>qf  <Plug>(coc-fix-current)
+nmap <silent>gf  <Plug>(coc-fix-current)
 
 " Shortcuts to common commands I use
 nmap <leader>b <c-^><cr>
 nmap <leader>f :NERDTree<CR>
 nmap <leader>p :Files<CR>
+nmap <leader>q :q<CR>
+nmap <leader>x :q!<CR>
+nmap <leader>w :w<CR>
+
 
 " Disable arrow keys
 noremap <Up> <Nop>
