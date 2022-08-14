@@ -72,6 +72,7 @@ nmap <leader>ac  <Plug>(coc-codeaction)
 
 " Apply AutoFix to problem on the current line.
 nmap <silent>gf  <Plug>(coc-fix-current)
+inoremap <silent> <c-space> <Plug>(coc-codeaction)
 
 " Shortcuts to common commands I use
 nmap <leader>b <c-^><cr>

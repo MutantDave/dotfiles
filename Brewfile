@@ -20,5 +20,6 @@ brew 'yarn'
 brew 'solidity'
 brew 'lazygit'
 brew 'pyenv'
+brew 'ethereum'
 
 cask 'ngrok'
