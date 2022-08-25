@@ -21,5 +21,6 @@ brew 'solidity'
 brew 'lazygit'
 brew 'pyenv'
 brew 'ethereum'
+brew 'rust-analyzer'
 
 cask 'ngrok'
