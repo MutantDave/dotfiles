@@ -27,8 +27,8 @@
     - Brewfile
 
 - shell:
-    - command: curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-      description: Installing plug.vim
+    - command: git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+      description: Installing packer.nvim
     - command: /bin/bash install-nord.sh
       description: Installing Nord Terminal Colors
     - command: rm -rf ~/.tmux/plugins/tpm && git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
