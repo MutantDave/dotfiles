@@ -27,6 +27,7 @@ plugins=(
   fancy-ctrl-z
   aws
   macos
+  vi-mode
 )
 
 zstyle ':completion:*' list-prompt   ''
@@ -38,6 +39,8 @@ source $ZSH/oh-my-zsh.sh
 alias ls='ls -Gltra'
 alias vim='nvim'
 alias t2='tree -L 2'
+
+bindkey -v
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

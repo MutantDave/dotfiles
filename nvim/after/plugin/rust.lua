@@ -31,6 +31,12 @@ local opts = {
                 checkOnSave = {
                     command = "clippy"
                 },
+                procMacro = {
+                    enable = false,
+                    attributes = {
+                      enabled = false
+                    },
+                },
             }
         }
     },
