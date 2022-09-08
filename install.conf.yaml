@@ -53,13 +53,7 @@
       description: Updating Foundry/Forge (solidity)
     - command: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
       description: Installing rust
-    - command: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-      description: Installing nvm
-    - command: source ~/.zshrc && nvm install node
-      description: Installing node
-    - command: source ~/.zshrc && npm install -g --force solium
-      description: Installing solidity linter
-    - command: source ~/.zshrc && npm install -g --force serverless
-      description: Installing serverless.framework
     - command: cargo install bacon
       description: Installing Bacon
+    - command: npm install -g --force vscode-langservers-extracted typescript typescript-language-server serverless solium @tailwindcss/language-server vscode-json-languageserver
+      description: Installing global npm packages

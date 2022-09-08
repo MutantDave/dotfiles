@@ -1,4 +1,10 @@
+vim.cmd([[filetype plugin indent on]])
+
 vim.g.mapleader = " "
+
+if vim.fn.exists("syntax_on") ~= 1 then
+  vim.cmd([[syntax enable]])
+end
 
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
@@ -16,3 +22,6 @@ vim.opt.clipboard = "unnamed"
 
 vim.opt.splitbelow = true
 vim.opt.splitright = true
+vim.opt.updatetime = 50
+vim.opt.termguicolors = true
+vim.opt.scrolloff = 8

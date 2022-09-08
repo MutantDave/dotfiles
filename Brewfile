@@ -22,5 +22,8 @@ brew 'lazygit'
 brew 'pyenv'
 brew 'ethereum'
 brew 'rust-analyzer'
+brew 'llvm'
+brew 'node@16'
+brew 'rbenv'
 
 cask 'ngrok'

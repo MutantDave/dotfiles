@@ -41,4 +41,5 @@ return require('packer').startup(function(use)
   use 'jparise/vim-graphql'
 
   use 'tomlion/vim-solidity'
+  use 'dense-analysis/ale'
 end)
