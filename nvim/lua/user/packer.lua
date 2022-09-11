@@ -42,4 +42,5 @@ return require('packer').startup(function(use)
 
   use 'tomlion/vim-solidity'
   use 'dense-analysis/ale'
+  use { "catppuccin/nvim", as = "catppuccin" }
 end)

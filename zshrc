@@ -1,7 +1,7 @@
 export ZSH=$HOME/.oh-my-zsh
 export GOPATH="$HOME/go"
 
-export PATH="/opt/homebrew/bin:$PATH:$HOME/.foundry/bin:$GOPATH/bin:$HOME/.cargo/bin"
+export PATH="/opt/homebrew/bin:$HOME/.rbenv/shims:$PATH:$HOME/.foundry/bin:$GOPATH/bin:$HOME/.cargo/bin"
 export HOMEBREW_PATH=$(brew --prefix)
 export PATH="$HOMEBREW_PATH/bin:$PATH:$HOMEBREW_PATH/opt/node@16/bin"
 
