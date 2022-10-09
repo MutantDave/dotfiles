@@ -6,7 +6,6 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'	
-
   use 'EdenEast/nightfox.nvim'
 
   use 'preservim/nerdtree'
@@ -45,4 +44,6 @@ return require('packer').startup(function(use)
   use { "catppuccin/nvim", as = "catppuccin" }
 
   use 'github/copilot.vim'
+  use 'NvChad/nvim-colorizer.lua'
+
 end)

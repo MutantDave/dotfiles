@@ -25,5 +25,6 @@ brew 'rust-analyzer'
 brew 'llvm'
 brew 'node@16'
 brew 'rbenv'
+brew 'asdf'
 
 cask 'ngrok'
