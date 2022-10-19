@@ -36,4 +36,5 @@ source $ZSH/oh-my-zsh.sh
 alias ls='ls -Gltra'
 alias vim='nvim'
 alias t2='tree -L 2'
+alias lg='lazygit'
 . /opt/homebrew/opt/asdf/etc/bash_completion.d/asdf.bash
