@@ -3,7 +3,7 @@ vim.g.ale_linters = {
   javascript = {'prettier'},
   solidity = {
     'solc', 'solium'
-  }
+  },
 }
 
 vim.g.ale_solidity_solc_options = '--base-path ./ --include-path ./lib $(forge remappings)'
@@ -17,6 +17,7 @@ local nvim_lsp = require'lspconfig'
 nvim_lsp.tsserver.setup{}
 nvim_lsp.tailwindcss.setup{}
 nvim_lsp.jsonls.setup{}
+nvim_lsp.vuels.setup{}
 
 -- Rust
 local cmp = require'cmp'
