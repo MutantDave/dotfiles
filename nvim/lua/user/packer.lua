@@ -8,23 +8,18 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'	
   use 'EdenEast/nightfox.nvim'
 
+  use 'neovim/nvim-lspconfig'
+
   use 'preservim/nerdtree'
-  use 'junegunn/fzf'
-  use 'junegunn/fzf.vim'
 
   use 'prettier/vim-prettier'
-
-  use 'neovim/nvim-lspconfig'
   
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
-  use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-buffer'
 
   use 'simrat39/rust-tools.nvim'
-
-  use 'hrsh7th/vim-vsnip'
 
   use 'nvim-lua/popup.nvim'
   use 'nvim-lua/plenary.nvim'
@@ -32,7 +27,6 @@ return require('packer').startup(function(use)
 
   use 'arcticicestudio/nord-vim'
   use 'ryanoasis/vim-devicons'
-  use 'tiagofumo/vim-nerdtree-syntax-highlight'
 
   use 'pangloss/vim-javascript'
   use 'leafgarland/typescript-vim'
