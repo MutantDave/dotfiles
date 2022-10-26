@@ -4,6 +4,7 @@ vim.g.ale_linters = {
   solidity = {
     'solc', 'solium'
   },
+  vue = {'vls'},
 }
 
 vim.g.ale_solidity_solc_options = '--base-path ./ --include-path ./lib $(forge remappings)'
@@ -59,7 +60,7 @@ local opts = {
         },
         inlay_hints = {
             auto = true,
-            show_parameter_hints = false,
+            show_parameter_hints = true,
             parameter_hints_prefix = "",
             other_hints_prefix = "",
         },

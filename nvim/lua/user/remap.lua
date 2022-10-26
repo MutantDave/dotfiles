@@ -8,8 +8,8 @@ nnoremap("<C-k>","<C-w>k")
 nnoremap("<C-l>","<C-w>l")
 
 nnoremap("<leader>b", "<c-^><CR>")
-nnoremap("<leader>f", ":Telescope find_files<CR>")
-nnoremap("<leader>p", ":Files<CR>")
+nnoremap("<leader>f", ":NERDTree<CR>")
+nnoremap("<leader>p", ":Telescope find_files<CR>")
 nnoremap("<leader>v", ":vsplit<CR>")
 nnoremap("<leader>h", ":split<CR>")
 

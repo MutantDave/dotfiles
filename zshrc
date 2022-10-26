@@ -41,3 +41,5 @@ alias lg='lazygit'
 alias source_zshrc='source ~/.zshrc'
 alias find_text='grep -r -n --exclude-dir={node_modules,build,out,cache,artifacts,dist,.next}'
 . /opt/homebrew/opt/asdf/etc/bash_completion.d/asdf.bash
+
+export PATH="$PATH:/Users/dave/.huff/bin"
