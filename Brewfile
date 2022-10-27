@@ -26,5 +26,6 @@ brew 'llvm'
 brew 'node@16'
 brew 'rbenv'
 brew 'asdf'
+brew 'wget'
 
 cask 'ngrok'
