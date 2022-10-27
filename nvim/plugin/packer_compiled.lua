@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/Users/dave/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
+  ["cmp-vsnip"] = {
+    loaded = true,
+    path = "/Users/dave/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
+    url = "https://github.com/hrsh7th/cmp-vsnip"
+  },
   ["copilot.vim"] = {
     loaded = true,
     path = "/Users/dave/.local/share/nvim/site/pack/packer/start/copilot.vim",
@@ -193,6 +198,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/dave/.local/share/nvim/site/pack/packer/start/vim-solidity",
     url = "https://github.com/tomlion/vim-solidity"
+  },
+  ["vim-vsnip"] = {
+    loaded = true,
+    path = "/Users/dave/.local/share/nvim/site/pack/packer/start/vim-vsnip",
+    url = "https://github.com/hrsh7th/vim-vsnip"
   }
 }
 
