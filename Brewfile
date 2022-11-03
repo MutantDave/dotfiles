@@ -25,7 +25,7 @@ brew 'rust-analyzer'
 brew 'llvm'
 brew 'node@16'
 brew 'rbenv'
-brew 'asdf'
 brew 'wget'
+brew 'lua-language-server'
 
 cask 'ngrok'

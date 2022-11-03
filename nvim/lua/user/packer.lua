@@ -5,19 +5,21 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
   -- Packer can manage itself
-  use 'wbthomason/packer.nvim'	
+  use 'wbthomason/packer.nvim'
   use 'EdenEast/nightfox.nvim'
 
   use 'neovim/nvim-lspconfig'
+  use 'glepnir/lspsaga.nvim'
 
   use 'preservim/nerdtree'
 
   use 'prettier/vim-prettier'
-  
-  use 'hrsh7th/nvim-cmp'
-  use 'hrsh7th/cmp-nvim-lsp'
-  use 'hrsh7th/cmp-path'
+
   use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/nvim-cmp'
+
+  use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/vim-vsnip'
 
@@ -42,7 +44,7 @@ return require('packer').startup(function(use)
   use {
     "zbirenbaum/copilot-cmp",
     after = { "copilot.lua" },
-    config = function ()
+    config = function()
       require("copilot_cmp").setup()
     end
   }
