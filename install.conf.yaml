@@ -18,6 +18,7 @@
       relink: true
     ~/.gitconfig: gitconfig
     ~/.tmux.conf: tmux.conf
+    ~/.utils.sh: utils.sh
 
 - shell:
     - command: /bin/bash install-homebrew.sh

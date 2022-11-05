@@ -1,7 +1,8 @@
 export ZSH=$HOME/.oh-my-zsh
 export GOPATH="$HOME/go"
-export HOMEBREW_PATH=$(brew --prefix)
-export PATH="$HOME/.ebcli-virtual-env/executables:$HOMEBREW_PATH/bin:$HOMEBREW_PATH/opt/node@16/bin:$HOME/.rbenv/shims:$HOME/.foundry/bin:$GOPATH/bin:$HOME/.cargo/bin:$HOME/.huff/bin:$PATH"
+export HOMEBREW_PATH=/opt/homebrew
+export BREW_BIN=/opt/homebrew/bin
+export PATH="$BREW_BIN:$HOME/.ebcli-virtual-env/executables:$HOMEBREW_PATH/bin:$HOMEBREW_PATH/opt/node@16/bin:$HOME/.rbenv/shims:$HOME/.foundry/bin:$GOPATH/bin:$HOME/.cargo/bin:$HOME/.huff/bin:$PATH"
 export HOMEBREW_NO_ENV_HINTS=true
 export EDITOR='nvim'
 
@@ -26,6 +27,6 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-source ./utils.sh
+source $HOME/.utils.sh
 
 export PATH="$PATH:/Users/dave/.huff/bin"
