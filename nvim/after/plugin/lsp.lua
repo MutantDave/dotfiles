@@ -84,6 +84,7 @@ cmp.setup({
 })
 
 vim.opt.completeopt= {"menuone","noinsert","noselect"}
+vim.cmd [[autocmd! CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false, scope="cursor"})]]
 
 local opts = {
   tools = {
