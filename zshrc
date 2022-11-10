@@ -9,6 +9,7 @@ export EDITOR='nvim'
 eval "$(starship init zsh)"
 test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
 
+VI_MODE_SET_CURSOR=true
 plugins=(
   z
   cmdtime
