@@ -41,7 +41,8 @@ saga.init_lsp_saga {
   server_filetype_map = {
     typescript = 'typescript',
     rust = 'rust'
-  }
+  },
+  finder_request_timeout = 15000
 }
 nnoremap('gd', '<Cmd>Lspsaga lsp_finder<CR>')
 nnoremap('gp', '<Cmd>Lspsaga peek_definition<CR>')

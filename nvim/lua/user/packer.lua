@@ -37,6 +37,7 @@ return require('packer').startup(function(use)
   use 'leafgarland/typescript-vim'
   use 'maxmellon/vim-jsx-pretty'
   use 'jparise/vim-graphql'
+  use 'tpope/vim-surround'
 
   use 'tomlion/vim-solidity'
   use 'dense-analysis/ale'

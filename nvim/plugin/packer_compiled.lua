@@ -223,6 +223,11 @@ _G.packer_plugins = {
     path = "/Users/dave/.local/share/nvim/site/pack/packer/start/vim-solidity",
     url = "https://github.com/tomlion/vim-solidity"
   },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/Users/dave/.local/share/nvim/site/pack/packer/start/vim-surround",
+    url = "https://github.com/tpope/vim-surround"
+  },
   ["vim-vsnip"] = {
     loaded = true,
     path = "/Users/dave/.local/share/nvim/site/pack/packer/start/vim-vsnip",
