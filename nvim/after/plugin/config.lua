@@ -8,6 +8,7 @@ require("catppuccin").setup()
 
 vim.cmd [[colorscheme catppuccin]]
 vim.g.NERDTreeMinimalMenu = 1
+vim.g.NERDTreeShowHidden = 1
 
 require'colorizer'.setup({})
 

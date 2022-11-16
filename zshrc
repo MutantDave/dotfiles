@@ -30,4 +30,4 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 source $HOME/.utils.sh
 
-export PATH="$PATH:/Users/dave/.huff/bin"
+export PATH="$PATH:/Users/dave/.huff/bin:/Users/dave/.pyenv/shims"
