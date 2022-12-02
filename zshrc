@@ -31,3 +31,9 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.utils.sh
 
 export PATH="$PATH:/Users/dave/.huff/bin:/Users/dave/.pyenv/shims"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/dave/.google-cloud-sdk/path.zsh.inc' ]; then . '/Users/dave/.google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/dave/.google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/dave/.google-cloud-sdk/completion.zsh.inc'; fi

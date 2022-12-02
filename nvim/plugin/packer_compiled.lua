@@ -133,6 +133,11 @@ _G.packer_plugins = {
     path = "/Users/dave/.local/share/nvim/site/pack/packer/start/fzf.vim",
     url = "https://github.com/junegunn/fzf.vim"
   },
+  hardmode = {
+    loaded = true,
+    path = "/Users/dave/.local/share/nvim/site/pack/packer/start/hardmode",
+    url = "https://github.com/wikitopian/hardmode"
+  },
   ["lspsaga.nvim"] = {
     loaded = true,
     path = "/Users/dave/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
@@ -168,6 +173,11 @@ _G.packer_plugins = {
     path = "/Users/dave/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-transparent"] = {
+    loaded = true,
+    path = "/Users/dave/.local/share/nvim/site/pack/packer/start/nvim-transparent",
+    url = "https://github.com/xiyaowong/nvim-transparent"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/dave/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -187,6 +197,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/dave/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
     url = "https://github.com/simrat39/rust-tools.nvim"
+  },
+  ["scratch.vim"] = {
+    loaded = true,
+    path = "/Users/dave/.local/share/nvim/site/pack/packer/start/scratch.vim",
+    url = "https://github.com/vim-scripts/scratch.vim"
   },
   ["typescript-vim"] = {
     loaded = true,

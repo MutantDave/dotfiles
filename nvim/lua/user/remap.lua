@@ -12,9 +12,9 @@ nnoremap("<leader>f", ":NERDTree<CR>")
 nnoremap("<leader>p", ":Files<CR>")
 nnoremap("<leader>v", ":vsplit<CR>")
 nnoremap("<leader>h", ":split<CR>")
-
-nnoremap("<leader>w", ":w<CR>")
-nnoremap("<leader>q", ":q<CR>")
+nnoremap("gs", ":Sscratch<CR>")
 
 vnoremap("J", ":m '>+1<CR>gv=gv")
 vnoremap("K", ":m '<-2<CR>gv=gv")
+
+vim.cmd [[cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))]]

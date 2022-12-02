@@ -7,7 +7,7 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
   use 'EdenEast/nightfox.nvim'
-
+  use 'wikitopian/hardmode'
   use 'neovim/nvim-lspconfig'
   use 'glepnir/lspsaga.nvim'
 
@@ -59,6 +59,8 @@ return require('packer').startup(function(use)
     end,
   }
 
+  use 'xiyaowong/nvim-transparent'
   use 'NvChad/nvim-colorizer.lua'
 
+  use 'vim-scripts/scratch.vim'
 end)

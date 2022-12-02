@@ -33,7 +33,8 @@ nvim_lsp.tsserver.setup {
 
 nvim_lsp.tailwindcss.setup {}
 nvim_lsp.jsonls.setup {}
-nvim_lsp.vuels.setup {}
+nvim_lsp.solidity_ls.setup {}
+nvim_lsp.cssmodules_ls.setup {}
 
 vim.o.updatetime = 50
 
@@ -42,7 +43,7 @@ saga.init_lsp_saga {
     typescript = 'typescript',
     rust = 'rust'
   },
-  finder_request_timeout = 15000
+  finder_request_timeout = 5000
 }
 nnoremap('gd', '<Cmd>Lspsaga lsp_finder<CR>')
 nnoremap('gp', '<Cmd>Lspsaga peek_definition<CR>')

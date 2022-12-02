@@ -56,5 +56,5 @@
       description: Installing rust
     - command: cargo install bacon
       description: Installing Bacon
-    - command: npm install -g --force vscode-langservers-extracted typescript typescript-language-server serverless solium @tailwindcss/language-server vscode-json-languageserver
+    - command: npm install -g --force vscode-langservers-extracted cssmodules-language-server solidity-language-server typescript typescript-language-server serverless solium @tailwindcss/language-server vscode-json-languageserver
       description: Installing global npm packages
