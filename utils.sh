@@ -17,3 +17,7 @@ function replace_text_file {
 function find_text {
   grep -r -n --exclude-dir={node_modules,build,out,cache,artifacts,dist,.next} $1
 }
+
+function convert_flac {
+  find . -name "*.flac" -exec ffmpeg -i {} -ab 160k -map_metadata 0 -id3v2_version 3 {}.mp3 \;
+}

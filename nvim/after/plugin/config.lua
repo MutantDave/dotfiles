@@ -27,3 +27,4 @@ require'transparent'.setup({
   },
   exclude = {}, -- table: groups you don't want to clear
 })
+

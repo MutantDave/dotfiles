@@ -118,12 +118,6 @@ local opts = {
         diagnostics = {
           disabled = { "unresolved-proc-macro" }
         },
-        procMacro = {
-          enable = false,
-          attributes = {
-            enabled = false
-          },
-        },
       }
     }
   },

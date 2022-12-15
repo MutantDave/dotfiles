@@ -7,7 +7,6 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
   use 'EdenEast/nightfox.nvim'
-  use 'wikitopian/hardmode'
   use 'neovim/nvim-lspconfig'
   use 'glepnir/lspsaga.nvim'
 
@@ -38,7 +37,7 @@ return require('packer').startup(function(use)
   use 'maxmellon/vim-jsx-pretty'
   use 'jparise/vim-graphql'
   use 'tpope/vim-surround'
-
+  use 'takac/vim-hardtime'
   use 'tomlion/vim-solidity'
   use 'dense-analysis/ale'
   use { "catppuccin/nvim", as = "catppuccin" }
@@ -63,4 +62,10 @@ return require('packer').startup(function(use)
   use 'NvChad/nvim-colorizer.lua'
 
   use 'vim-scripts/scratch.vim'
+  use {
+    'numToStr/Navigator.nvim',
+    config = function()
+      require('Navigator').setup()
+    end
+  }
 end)
