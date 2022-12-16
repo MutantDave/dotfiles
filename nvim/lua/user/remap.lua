@@ -1,16 +1,6 @@
 local nnoremap = require("user.keymap").nnoremap
 local vnoremap = require("user.keymap").vnoremap
 
---nnoremap("<C-h>","<C-w>h")
---nnoremap("<C-j>","<C-w>j")
---nnoremap("<C-k>","<C-w>k")
---nnoremap("<C-l>","<C-w>l")
-
-vim.keymap.set({'n', 't'}, '<C-h>', '<CMD>NavigatorLeft<CR>')
-vim.keymap.set({'n', 't'}, '<C-l>', '<CMD>NavigatorRight<CR>')
-vim.keymap.set({'n', 't'}, '<C-k>', '<CMD>NavigatorUp<CR>')
-vim.keymap.set({'n', 't'}, '<C-j>', '<CMD>NavigatorDown<CR>')
-
 vim.keymap.set({'n', 't'}, '<M-h>', '<CMD>NavigatorLeft<CR>')
 vim.keymap.set({'n', 't'}, '<M-l>', '<CMD>NavigatorRight<CR>')
 vim.keymap.set({'n', 't'}, '<M-k>', '<CMD>NavigatorUp<CR>')

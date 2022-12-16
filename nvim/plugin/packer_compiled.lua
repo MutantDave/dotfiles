@@ -80,6 +80,11 @@ _G.packer_plugins = {
     path = "/Users/dave/.local/share/nvim/site/pack/packer/start/Navigator.nvim",
     url = "https://github.com/numToStr/Navigator.nvim"
   },
+  ale = {
+    loaded = true,
+    path = "/Users/dave/.local/share/nvim/site/pack/packer/start/ale",
+    url = "https://github.com/dense-analysis/ale"
+  },
   catppuccin = {
     loaded = true,
     path = "/Users/dave/.local/share/nvim/site/pack/packer/start/catppuccin",
@@ -174,10 +179,20 @@ _G.packer_plugins = {
     path = "/Users/dave/.local/share/nvim/site/pack/packer/start/nvim-transparent",
     url = "https://github.com/xiyaowong/nvim-transparent"
   },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/Users/dave/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/dave/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  playground = {
+    loaded = true,
+    path = "/Users/dave/.local/share/nvim/site/pack/packer/start/playground",
+    url = "https://github.com/nvim-treesitter/playground"
   },
   ["plenary.nvim"] = {
     loaded = true,
@@ -203,6 +218,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/dave/.local/share/nvim/site/pack/packer/start/typescript-vim",
     url = "https://github.com/leafgarland/typescript-vim"
+  },
+  undotree = {
+    loaded = true,
+    path = "/Users/dave/.local/share/nvim/site/pack/packer/start/undotree",
+    url = "https://github.com/mbbill/undotree"
   },
   ["vim-devicons"] = {
     loaded = true,
