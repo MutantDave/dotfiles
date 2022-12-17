@@ -1,19 +1,19 @@
-local nnoremap = require("user.keymap").nnoremap
-local vnoremap = require("user.keymap").vnoremap
-
 vim.keymap.set({'n', 't'}, '<M-h>', '<CMD>NavigatorLeft<CR>')
 vim.keymap.set({'n', 't'}, '<M-l>', '<CMD>NavigatorRight<CR>')
 vim.keymap.set({'n', 't'}, '<M-k>', '<CMD>NavigatorUp<CR>')
 vim.keymap.set({'n', 't'}, '<M-j>', '<CMD>NavigatorDown<CR>')
 
-nnoremap("<leader>b", "<c-^><CR>")
-nnoremap("<leader>f", ":NERDTreeToggle<CR>")
-nnoremap("<leader>p", ":Files<CR>")
-nnoremap("<leader>v", ":vsplit<CR>")
-nnoremap("<leader>h", ":split<CR>")
-nnoremap("gs", ":Sscratch<CR>")
+vim.keymap.set("n","<leader>b", "<c-^><CR>")
+vim.keymap.set("n","<leader>f", ":NERDTreeToggle<CR>")
+vim.keymap.set("n","<leader>p", ":Files<CR>")
+vim.keymap.set("n","<leader>v", ":vsplit<CR>")
+vim.keymap.set("n","<leader>h", ":split<CR>")
+vim.keymap.set("n","gs", ":Sscratch<CR>")
+vim.keymap.set("n","<C-d>", "<C-d>zz")
+vim.keymap.set("n","<C-u>", "<C-u>zz")
 
-vnoremap("J", ":m '>+1<CR>gv=gv")
-vnoremap("K", ":m '<-2<CR>gv=gv")
+vim.keymap.set("v","J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v","K", ":m '<-2<CR>gv=gv")
+vim.keymap.set("n","Q", "<nop>")
 
 vim.cmd [[cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))]]
