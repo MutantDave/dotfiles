@@ -15,6 +15,7 @@ return require('packer').startup(function(use)
   use 'junegunn/fzf'
 
   use 'ryanoasis/vim-devicons'
+  use 'rust-lang/rust.vim'
 
   use 'tpope/vim-surround'
 

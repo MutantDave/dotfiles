@@ -1,6 +1,23 @@
 local lsp = require('lsp-zero')
+local cmp = require'cmp'
 
 lsp.preset('recommended')
+lsp.setup_nvim_cmp({
+  mapping = {
+    ['<C-p>'] = cmp.mapping.select_prev_item(),
+    ['<C-n>'] = cmp.mapping.select_next_item(),
+    ['<S-Tab>'] = cmp.mapping.select_prev_item(),
+    ['<Tab>'] = cmp.mapping.select_next_item(),
+    ['<C-d>'] = cmp.mapping.scroll_docs(-4),
+    ['<C-f>'] = cmp.mapping.scroll_docs(4),
+    ['<C-Space>'] = cmp.mapping.complete(),
+    ['<C-e>'] = cmp.mapping.close(),
+    ['<CR>'] = cmp.mapping.confirm({
+      behavior = cmp.ConfirmBehavior.Insert,
+      select = true,
+   })
+  }
+})
 lsp.setup()
 
 vim.diagnostic.config({
@@ -8,6 +25,8 @@ vim.diagnostic.config({
   signs = true,
   update_in_insert = false,
   underline = true,
-  severity_sort = false,
+  severity_sort = true,
   float = true,
 })
+
+vim.g.rustfmt_autosave = 1

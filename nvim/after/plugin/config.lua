@@ -10,6 +10,8 @@ vim.cmd [[colorscheme catppuccin]]
 vim.g.NERDTreeMinimalMenu = 1
 vim.g.NERDTreeShowHidden = 1
 
+vim.g.NERDTreeIgnore = {'.DS_Store'}
+
 require'colorizer'.setup({})
 
 require'transparent'.setup({
