@@ -21,7 +21,7 @@ lsp.setup_nvim_cmp({
 lsp.setup()
 
 vim.diagnostic.config({
-  virtual_text = true,
+  virtual_text = false,
   signs = true,
   update_in_insert = false,
   underline = true,
@@ -30,3 +30,5 @@ vim.diagnostic.config({
 })
 
 vim.g.rustfmt_autosave = 1
+vim.o.updatetime = 250
+vim.cmd [[autocmd! CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
