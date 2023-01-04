@@ -3,7 +3,6 @@ vim.keymap.set({'n', 't'}, '<M-l>', '<CMD>NavigatorRight<CR>')
 vim.keymap.set({'n', 't'}, '<M-k>', '<CMD>NavigatorUp<CR>')
 vim.keymap.set({'n', 't'}, '<M-j>', '<CMD>NavigatorDown<CR>')
 
-vim.keymap.set("n","<leader>b", "<c-^><CR>")
 vim.keymap.set("n","<leader>f", ":NERDTreeToggle<CR>")
 vim.keymap.set("n","<leader>p", ":Files<CR>")
 vim.keymap.set("n","<leader>v", ":vsplit<CR>")
