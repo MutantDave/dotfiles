@@ -57,5 +57,16 @@ return require('packer').startup(function(use)
   }
   use 'folke/tokyonight.nvim'
   use 'github/copilot.vim'
-  use 'vimwiki/vimwiki'
+  use {
+    'vimwiki/vimwiki',
+    config = function()
+        vim.g.vimwiki_list = {
+            {
+                path = '~/.wiki',
+                syntax = 'markdown',
+                ext = '.md',
+            }
+        }
+    end
+}
 end)
