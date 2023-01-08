@@ -57,4 +57,5 @@ return require('packer').startup(function(use)
   }
   use 'folke/tokyonight.nvim'
   use 'github/copilot.vim'
+  use 'vimwiki/vimwiki'
 end)
