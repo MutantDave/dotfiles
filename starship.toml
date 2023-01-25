@@ -74,7 +74,7 @@ symbol = " "
 
 [nodejs]
 symbol = " "
-format ="[$symbol($version )]($style)"
+format ="[$symbol($version )]($style) "
 
 [package]
 symbol = " "
@@ -95,5 +95,5 @@ disabled = false
 threshold = -1
 symbol = ""
 style = 'bold dimmed green'
-format = '$symbol [${ram}( | ${swap})]($style)'
+format = '$symbol [${ram}( | ${swap})]($style) '
 
