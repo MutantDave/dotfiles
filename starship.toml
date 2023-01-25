@@ -1,3 +1,29 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+$sudo\
+$directory\
+$rust\
+$nodejs\
+$env_var\
+$git_branch\
+$git_state\
+$git_status\
+$git_metrics\
+$fill\
+$memory_usage\
+$cmd_duration
+[>](bold red) """
+
+[git_metrics]
+added_style = 'bold blue'
+format = '[+$added]($added_style)/[-$deleted]($deleted_style) '
+disabled = false
+
+[fill]
+symbol = " "
+
 [aws]
 symbol = "  "
 
@@ -40,9 +66,6 @@ symbol = " "
 [julia]
 symbol = " "
 
-[memory_usage]
-symbol = " "
-
 [nim]
 symbol = " "
 
@@ -51,9 +74,26 @@ symbol = " "
 
 [nodejs]
 symbol = " "
+format ="[$symbol($version )]($style)"
 
 [package]
 symbol = " "
+format = '[$symbol$version]($style) '
 
 [rust]
 symbol = " "
+format = '[$symbol$version](red bold) '
+
+[sudo]
+style = 'bold green'
+symbol = '🔑 '
+disabled = false
+format = "$symbol"
+
+[memory_usage]
+disabled = false
+threshold = -1
+symbol = ""
+style = 'bold dimmed green'
+format = '$symbol [${ram}( | ${swap})]($style)'
+
