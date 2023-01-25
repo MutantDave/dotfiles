@@ -4,9 +4,10 @@ export HOMEBREW_PATH=/opt/homebrew
 export BREW_BIN=/opt/homebrew/bin
 export PATH="$BREW_BIN:$HOME/.ebcli-virtual-env/executables:$HOMEBREW_PATH/bin:$HOMEBREW_PATH/opt/node@16/bin:$HOME/.rbenv/shims:$HOME/.foundry/bin:$GOPATH/bin:$HOME/.cargo/bin:$HOME/.huff/bin:$PATH"
 export PATH="$PATH:$HOME/.huff/bin:$HOME/.pyenv/shims"
+export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 export HOMEBREW_NO_ENV_HINTS=true
+export HOMEBREW_NO_AUTO_UPDATE=1
 export EDITOR='nvim'
-
 
 eval "$(starship init zsh)"
 test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)

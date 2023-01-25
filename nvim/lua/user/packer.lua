@@ -16,6 +16,7 @@ return require('packer').startup(function(use)
 
   use 'ryanoasis/vim-devicons'
   use 'rust-lang/rust.vim'
+  use 'simrat39/rust-tools.nvim'
 
   use 'tpope/vim-surround'
 
@@ -63,8 +64,6 @@ return require('packer').startup(function(use)
         vim.g.vimwiki_list = {
             {
                 path = '~/.wiki',
-                syntax = 'markdown',
-                ext = '.md',
             }
         }
     end
