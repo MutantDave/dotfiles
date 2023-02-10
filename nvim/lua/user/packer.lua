@@ -18,6 +18,9 @@ return require('packer').startup(function(use)
   use 'rust-lang/rust.vim'
   use 'simrat39/rust-tools.nvim'
 
+  use 'nvim-lua/plenary.nvim'
+  use 'mfussenegger/nvim-dap'
+
   use 'tpope/vim-surround'
 
   use { "catppuccin/nvim", as = "catppuccin" }
@@ -57,7 +60,6 @@ return require('packer').startup(function(use)
     }
   }
   use 'folke/tokyonight.nvim'
-  use 'github/copilot.vim'
   use {
     'vimwiki/vimwiki',
     config = function()
