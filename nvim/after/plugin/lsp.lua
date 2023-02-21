@@ -18,6 +18,15 @@ lsp.setup_nvim_cmp({
    })
   }
 })
+
+lsp.configure('solidity', {
+  settings = {
+    solidity = {
+      includePath = "./lib"
+    }
+  }
+})
+
 lsp.setup()
 
 vim.diagnostic.config({
