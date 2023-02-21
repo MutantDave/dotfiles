@@ -27,6 +27,31 @@ lsp.configure('solidity', {
   }
 })
 
+lsp.configure('yaml', {
+  settings = {
+    customTags = {
+      "!fn",
+      "!And",
+      "!If",
+      "!Not",
+      "!Equals",
+      "!Or",
+      "!FindInMap sequence",
+      "!Base64",
+      "!Cidr",
+      "!Ref",
+      "!Ref Scalar",
+      "!Sub",
+      "!GetAtt",
+      "!GetAZs",
+      "!ImportValue",
+      "!Select",
+      "!Split",
+      "!Join sequence"
+    },
+  }
+})
+
 lsp.setup()
 
 vim.diagnostic.config({
