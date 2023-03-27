@@ -60,14 +60,4 @@ return require('packer').startup(function(use)
     }
   }
   use 'folke/tokyonight.nvim'
-  use {
-    'vimwiki/vimwiki',
-    config = function()
-        vim.g.vimwiki_list = {
-            {
-                path = '~/.wiki',
-            }
-        }
-    end
-}
 end)
