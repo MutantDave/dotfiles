@@ -4,10 +4,8 @@ vim.keymap.set({'n', 't'}, '<M-k>', '<CMD>NavigatorUp<CR>')
 vim.keymap.set({'n', 't'}, '<M-j>', '<CMD>NavigatorDown<CR>')
 
 vim.keymap.set("n","<leader>f", ":NERDTreeToggle<CR>")
-vim.keymap.set("n","<leader>p", ":Files<CR>")
 vim.keymap.set("n","<leader>v", ":vsplit<CR>")
 vim.keymap.set("n","<leader>h", ":split<CR>")
-vim.keymap.set("n","gs", ":Sscratch<CR>")
 vim.keymap.set("n","<C-d>", "<C-d>zz")
 vim.keymap.set("n","<C-u>", "<C-u>zz")
 

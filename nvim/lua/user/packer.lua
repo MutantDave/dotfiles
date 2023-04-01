@@ -4,22 +4,24 @@
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
+  use {
+	  'nvim-telescope/telescope.nvim', tag = '0.1.0',
+	  requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
+  use 'BurntSushi/ripgrep'
+
+  use('theprimeagen/harpoon')
 
   use 'preservim/nerdtree'
-
-  use 'prettier/vim-prettier'
+  use('jose-elias-alvarez/null-ls.nvim')
+  use('MunifTanjim/prettier.nvim')
 
   use 'nvim-lua/popup.nvim'
-  use 'nvim-lua/plenary.nvim'
-  use 'junegunn/fzf.vim'
-  use 'junegunn/fzf'
 
   use 'ryanoasis/vim-devicons'
   use 'rust-lang/rust.vim'
   use 'simrat39/rust-tools.nvim'
-
-  use 'nvim-lua/plenary.nvim'
-  use 'mfussenegger/nvim-dap'
 
   use 'tpope/vim-surround'
 
@@ -27,17 +29,20 @@ return require('packer').startup(function(use)
 
   use 'xiyaowong/nvim-transparent'
   use 'NvChad/nvim-colorizer.lua'
+  use 'github/copilot.vim'
 
-  use 'vim-scripts/scratch.vim'
   use {
     'numToStr/Navigator.nvim',
     config = function()
       require('Navigator').setup()
     end
   }
+
   use {'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}}
   use 'nvim-treesitter/playground'
+
   use 'mbbill/undotree'
+
   use {
     'VonHeikemen/lsp-zero.nvim',
     requires = {

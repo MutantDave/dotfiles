@@ -115,20 +115,20 @@ _G.packer_plugins = {
     path = "/Users/dave/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "/Users/dave/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/dave/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
-  fzf = {
+  harpoon = {
     loaded = true,
-    path = "/Users/dave/.local/share/nvim/site/pack/packer/start/fzf",
-    url = "https://github.com/junegunn/fzf"
-  },
-  ["fzf.vim"] = {
-    loaded = true,
-    path = "/Users/dave/.local/share/nvim/site/pack/packer/start/fzf.vim",
-    url = "https://github.com/junegunn/fzf.vim"
+    path = "/Users/dave/.local/share/nvim/site/pack/packer/start/harpoon",
+    url = "https://github.com/theprimeagen/harpoon"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
@@ -150,6 +150,11 @@ _G.packer_plugins = {
     path = "/Users/dave/.local/share/nvim/site/pack/packer/start/nerdtree",
     url = "https://github.com/preservim/nerdtree"
   },
+  ["null-ls.nvim"] = {
+    loaded = true,
+    path = "/Users/dave/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
+    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/Users/dave/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -159,11 +164,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/dave/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/NvChad/nvim-colorizer.lua"
-  },
-  ["nvim-dap"] = {
-    loaded = true,
-    path = "/Users/dave/.local/share/nvim/site/pack/packer/start/nvim-dap",
-    url = "https://github.com/mfussenegger/nvim-dap"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -200,6 +200,16 @@ _G.packer_plugins = {
     path = "/Users/dave/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
   },
+  ["prettier.nvim"] = {
+    loaded = true,
+    path = "/Users/dave/.local/share/nvim/site/pack/packer/start/prettier.nvim",
+    url = "https://github.com/MunifTanjim/prettier.nvim"
+  },
+  ripgrep = {
+    loaded = true,
+    path = "/Users/dave/.local/share/nvim/site/pack/packer/start/ripgrep",
+    url = "https://github.com/BurntSushi/ripgrep"
+  },
   ["rust-tools.nvim"] = {
     loaded = true,
     path = "/Users/dave/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
@@ -210,10 +220,10 @@ _G.packer_plugins = {
     path = "/Users/dave/.local/share/nvim/site/pack/packer/start/rust.vim",
     url = "https://github.com/rust-lang/rust.vim"
   },
-  ["scratch.vim"] = {
+  ["telescope.nvim"] = {
     loaded = true,
-    path = "/Users/dave/.local/share/nvim/site/pack/packer/start/scratch.vim",
-    url = "https://github.com/vim-scripts/scratch.vim"
+    path = "/Users/dave/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["tokyonight.nvim"] = {
     loaded = true,
@@ -230,29 +240,14 @@ _G.packer_plugins = {
     path = "/Users/dave/.local/share/nvim/site/pack/packer/start/vim-devicons",
     url = "https://github.com/ryanoasis/vim-devicons"
   },
-  ["vim-prettier"] = {
-    loaded = true,
-    path = "/Users/dave/.local/share/nvim/site/pack/packer/start/vim-prettier",
-    url = "https://github.com/prettier/vim-prettier"
-  },
   ["vim-surround"] = {
     loaded = true,
     path = "/Users/dave/.local/share/nvim/site/pack/packer/start/vim-surround",
     url = "https://github.com/tpope/vim-surround"
-  },
-  vimwiki = {
-    config = { "\27LJ\2\nF\0\0\3\0\4\0\a6\0\0\0009\0\1\0004\1\3\0005\2\3\0>\2\1\1=\1\2\0K\0\1\0\1\0\1\tpath\f~/.wiki\17vimwiki_list\6g\bvim\0" },
-    loaded = true,
-    path = "/Users/dave/.local/share/nvim/site/pack/packer/start/vimwiki",
-    url = "https://github.com/vimwiki/vimwiki"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: vimwiki
-time([[Config for vimwiki]], true)
-try_loadstring("\27LJ\2\nF\0\0\3\0\4\0\a6\0\0\0009\0\1\0004\1\3\0005\2\3\0>\2\1\1=\1\2\0K\0\1\0\1\0\1\tpath\f~/.wiki\17vimwiki_list\6g\bvim\0", "config", "vimwiki")
-time([[Config for vimwiki]], false)
 -- Config for: Navigator.nvim
 time([[Config for Navigator.nvim]], true)
 try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14Navigator\frequire\0", "config", "Navigator.nvim")

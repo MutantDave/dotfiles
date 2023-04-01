@@ -14,10 +14,15 @@ vim.opt.shiftwidth = 2
 vim.opt.smartindent = true
 
 vim.opt.hlsearch = false
+vim.opt.incsearch = true
+vim.opt.updatetime = 50
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.wrap = false
+vim.opt.swapfile = false
+vim.opt.backup = false
+vim.opt.undofile = true
 
 vim.opt.clipboard = "unnamed"
 
