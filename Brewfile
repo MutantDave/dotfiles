@@ -27,5 +27,6 @@ brew 'node@18'
 brew 'rbenv'
 brew 'wget'
 brew 'lua-language-server'
+brew 'ripgrep'
 
 cask 'ngrok'
