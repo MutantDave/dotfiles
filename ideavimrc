@@ -1,29 +1,43 @@
-"" Source your .vimrc
-"source ~/.vimrc
-
-"" -- Suggested options --
-" Show a few lines of context around the cursor. Note that this makes the
-" text scroll if you mouse-click near the start or end of the window.
-set scrolloff=5
-
-" Do incremental searching.
-set incsearch
+"Plugins
+Plug 'preservim/nerdtree'
+Plug 'tpope/vim-surround'
+set NERDTree
+set visualbell
+set surround
+set ideajoin
 
 " Don't use Ex mode, use Q for formatting.
 map Q gq
 
+let g:mapleader = " "
 
-"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
-"" Map \r to the Reformat Code action
-"map \r <Action>(ReformatCode)
+set hlsearch
+set incsearch
 
-"" Map <leader>d to start debug
-"map <leader>d <Action>(Debug)
+set tabstop = 2
+set softtabstop = 2
+set shiftwidth = 2
+set nu
+set relativenumber
+set clipboard=unnamed
+set clipboard+=ideaput
+set scrolloff=8
 
-"" Map \b to toggle the breakpoint on the current line
-"map \b <Action>(ToggleLineBreakpoint)
+nnoremap \e :e ~/.ideavimrc<CR>
+nnoremap \r :action IdeaVim.ReloadVimRc.reload<CR>
 
-
-" Find more examples here: https://jb.gg/share-ideavimrc
-Plug 'preservim/nerdtree'
-set NERDTree
+nnoremap <leader>f :NERDTreeToggle<CR>
+map <C-i> <Action>(Back)
+map <C-o> <Action>(Forward)
+map <leader>h :action SplitHorizontally<CR>
+map <leader>v :action SplitVertically<CR>
+map <leader>o <Action>(GotoClass)
+map <leader>s <Action>(GotoSymbol)
+map <leader>p <Action>(GotoFile)
+map <leader>r <Action>(Refactorings.QuickListPopupAction)
+map <leader>k <Action>(ShowErrorDescription)
+map <M-h> <Action>(PrevSplitter)
+map <M-l> <Action>(NextSplitter)
+map <leader>t :action ActivateTerminalToolWindow<CR>
+nnoremap <s-TAB> :action PreviousTab<CR>
+nnoremap <TAB> :action NextTab<CR>
