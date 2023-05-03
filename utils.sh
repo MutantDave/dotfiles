@@ -1,6 +1,6 @@
 #!/bin/bash
 
-alias ls='ls -Gltra'
+alias ls='ls -Gla'
 alias vim='nvim'
 alias t2='tree -L 2'
 alias lg='lazygit'
