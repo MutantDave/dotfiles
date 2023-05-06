@@ -1,10 +1,10 @@
 "Plugins
-Plug 'preservim/nerdtree'
-Plug 'tpope/vim-surround'
 set NERDTree
 set visualbell
 set surround
 set ideajoin
+set highlightedyank
+
 
 " Don't use Ex mode, use Q for formatting.
 map Q gq
