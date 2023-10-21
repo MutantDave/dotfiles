@@ -3,8 +3,6 @@ tap "homebrew/cask"
 tap "homebrew/core"
 tap "ethereum/ethereum"
 
-brew "delve"
-brew "fzf"
 brew "neovim"
 brew "tmux"
 brew "tree"
@@ -19,7 +17,6 @@ brew 'libusb'
 brew 'yarn'
 brew 'solidity'
 brew 'lazygit'
-brew 'ethereum'
 brew 'rust-analyzer'
 brew 'llvm'
 brew 'node@18'
@@ -27,6 +24,3 @@ brew 'rbenv'
 brew 'wget'
 brew 'lua-language-server'
 brew 'ripgrep'
-brew 'jdtls'
-
-cask 'ngrok'

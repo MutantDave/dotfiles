@@ -12,7 +12,6 @@ $git_state\
 $git_status\
 $git_metrics\
 $fill\
-$memory_usage\
 $cmd_duration
 [>](bold red) """
 

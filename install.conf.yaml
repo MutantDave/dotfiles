@@ -7,11 +7,6 @@
 - clean: ["~"]
 
 - link:
-    ~/.wiki:
-      create: true
-      path: wiki
-      relink: true
-      force: true
     ~/.config/nvim:
       create: true
       path: nvim

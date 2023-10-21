@@ -3,16 +3,6 @@ local cmp = require'cmp'
 
 lsp.preset('recommended')
 
-lsp.configure('lua-language-server', {
-    settings = {
-        Lua = {
-            diagnostics = {
-                globals = { 'vim' }
-            }
-        }
-    }
-})
-
 lsp.setup_nvim_cmp({
   mapping = {
     ['<C-p>'] = cmp.mapping.select_prev_item(),
