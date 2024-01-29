@@ -10,7 +10,6 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 export EDITOR='nvim'
 
 eval "$(starship init zsh)"
-test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
 
 VI_MODE_SET_CURSOR=true
 plugins=(
@@ -35,11 +34,3 @@ source $HOME/.utils.sh
 source $HOME/.google-cloud-sdk/path.zsh.inc 2> /dev/null
 source $HOME/.google-cloud-sdk/completion.zsh.inc 2> /dev/null
 source $HOME/.privaterc 2> /dev/null
-
-
-# Load Angular CLI autocompletion.
-source <(ng completion script)
-
-
-# Load Angular CLI autocompletion.
-source <(ng completion script)

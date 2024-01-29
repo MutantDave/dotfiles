@@ -5,6 +5,7 @@ alias vim='nvim'
 alias t2='tree -L 2'
 alias lg='lazygit'
 alias source_zshrc='source ~/.zshrc'
+alias :q='exit'
 
 function replace_text_rec {
   grep -lr $1 ./* | xargs sed -i "" "s/$1/$2/g"
