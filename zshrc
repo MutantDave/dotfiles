@@ -13,7 +13,6 @@ eval "$(starship init zsh)"
 
 VI_MODE_SET_CURSOR=true
 plugins=(
-  z
   cmdtime
   zsh-syntax-highlighting
   brew
@@ -34,3 +33,4 @@ source $HOME/.utils.sh
 source $HOME/.google-cloud-sdk/path.zsh.inc 2> /dev/null
 source $HOME/.google-cloud-sdk/completion.zsh.inc 2> /dev/null
 source $HOME/.privaterc 2> /dev/null
+eval "$(zoxide init zsh)"
