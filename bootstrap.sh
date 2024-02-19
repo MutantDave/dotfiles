@@ -17,3 +17,4 @@ install omz
 install rust
 install npm
 install foundry
+install alacritty

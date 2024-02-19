@@ -30,4 +30,5 @@ brew 'llvm'
 brew 'yaml-language-server'
 brew 'zoxide'
 brew 'stow'
+cask 'alacritty'
 
