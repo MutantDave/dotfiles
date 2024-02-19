@@ -1,11 +1,7 @@
 local lsp = require('lsp-zero')
 local cmp = require'cmp'
 
-require('java').setup()
-
 lsp.preset('recommended')
-
-lsp.configure('jdtls', {})
 
 lsp.setup_nvim_cmp({
   mapping = {
