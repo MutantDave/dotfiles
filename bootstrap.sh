@@ -1,9 +1,15 @@
 #!/usr/bin/env bash
 script_dir=$(cd $(dirname $0)/scripts && pwd)
 
+echo "Bootstrapping..."
+
 # check for "--extras" flag
 if [ "$1" == "--extras" ]; then
-  extras=true
+	echo "Installing extras..."
+	extras=true
+else
+	echo "Skipping extras..."
+	extras=false
 fi
 
 function install {
@@ -24,6 +30,6 @@ install alacritty
 
 # install extras
 if [ "$extras" == true ]; then
-  install foundry
-  install rust
+	install foundry
+	install rust
 fi

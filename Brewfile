@@ -26,5 +26,6 @@ brew 'youtube-dl'
 brew 'yaml-language-server'
 brew 'zoxide'
 brew 'stow'
+brew 'cmake'
 cask 'alacritty'
 
