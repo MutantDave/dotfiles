@@ -5,7 +5,6 @@ set surround
 set ideajoin
 set highlightedyank
 
-
 " Don't use Ex mode, use Q for formatting.
 map Q gq
 

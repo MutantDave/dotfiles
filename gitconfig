@@ -2,7 +2,7 @@
 [user]
 # Please adapt and uncomment the following lines:
 	name = Dave Henke
-	email = dave@fancyrats.io
+	email = dave.p.henke@gmail.com
 [core]
 	excludesfile = ~/.gitignore_global
 [init]

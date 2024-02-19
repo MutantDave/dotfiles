@@ -33,4 +33,11 @@ source $HOME/.utils.sh
 source $HOME/.google-cloud-sdk/path.zsh.inc 2> /dev/null
 source $HOME/.google-cloud-sdk/completion.zsh.inc 2> /dev/null
 source $HOME/.privaterc 2> /dev/null
+
+alias ls='ls -Gla'
+alias vim='nvim'
+alias t2='tree -L 2'
+alias lg='lazygit'
+alias :q='exit'
+
 eval "$(zoxide init --cmd cd zsh)"
