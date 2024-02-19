@@ -22,7 +22,6 @@ _darcs
 ^/COPYING
 
 scripts
-nvim
 Brewfile
 Brewfile.lock.json
 bootstrap.sh
