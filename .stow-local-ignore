@@ -23,3 +23,6 @@ _darcs
 
 scripts
 nvim
+Brewfile
+Brewfile.lock.json
+bootstrap.sh
