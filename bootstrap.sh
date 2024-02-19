@@ -8,6 +8,8 @@ function install {
 install homebrew
 brew bundle
 
+stow .
+
 install tpm
 ~/.tmux/plugins/tpm/bin/install_plugins
 
@@ -15,6 +17,3 @@ install omz
 install rust
 install npm
 install foundry
-
-
-
