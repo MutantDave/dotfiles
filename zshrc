@@ -33,4 +33,4 @@ source $HOME/.utils.sh
 source $HOME/.google-cloud-sdk/path.zsh.inc 2> /dev/null
 source $HOME/.google-cloud-sdk/completion.zsh.inc 2> /dev/null
 source $HOME/.privaterc 2> /dev/null
-eval "$(zoxide init zsh)"
+eval "$(zoxide init --cmd cd zsh)"
