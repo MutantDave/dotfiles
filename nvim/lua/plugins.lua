@@ -51,5 +51,6 @@ return {
         },
       }
     },
-  }
+  },
+  'xiyaowong/nvim-transparent'
 }

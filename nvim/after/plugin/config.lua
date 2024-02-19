@@ -8,3 +8,4 @@ vim.g.NERDTreeWinSize = 60
 vim.g.NERDTreeIgnore = {'.DS_Store'}
 
 require'colorizer'.setup({})
+vim.cmd [[:TransparentEnable]]
