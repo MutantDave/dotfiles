@@ -1,9 +1,10 @@
 local lsp = require('lsp-zero')
 local cmp = require'cmp'
+require("mason").setup()
 
 lsp.preset('recommended')
 
-lsp.setup_nvim_cmp({
+cmp.setup({
   mapping = {
     ['<C-p>'] = cmp.mapping.select_prev_item(),
     ['<C-n>'] = cmp.mapping.select_next_item(),
@@ -16,7 +17,7 @@ lsp.setup_nvim_cmp({
     ['<CR>'] = cmp.mapping.confirm({
       behavior = cmp.ConfirmBehavior.Insert,
       select = true,
-   })
+    })
   }
 })
 
