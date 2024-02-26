@@ -3,8 +3,6 @@ import = [
 ]
 
 [window]
-decorations = "None"
-startup_mode = "SimpleFullscreen"
 padding = { x = 4, y = 16 }
 option_as_alt = "Both"
 
