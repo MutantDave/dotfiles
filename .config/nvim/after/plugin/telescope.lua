@@ -1,8 +1,14 @@
 local telescope = require('telescope')
+local actions = require("telescope.actions")
 telescope.setup({
   defaults = {
     path_display = { 'shorten' },
     file_ignore_patterns = {".git/", ".cache", "%.o", "%.a", "%.out", "%.class", "%.pdf", "%.mkv", "%.mp4", "%.zip", ".DS_Store", "node_modules"},
+    mappings = {
+      i = {
+        ["<esc>"] = actions.close
+      },
+    },
   },
   pickers = {
     find_files = {
