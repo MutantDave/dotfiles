@@ -26,8 +26,8 @@ nnoremap \e :e ~/.ideavimrc<CR>
 nnoremap \r :action IdeaVim.ReloadVimRc.reload<CR>
 
 nnoremap <leader>f :NERDTreeToggle<CR>
-map <C-i> <Action>(Back)
-map <C-o> <Action>(Forward)
+map <C-o> <Action>(Back)
+map <C-i> <Action>(Forward)
 map <leader>h :action SplitHorizontally<CR>
 map <leader>v :action SplitVertically<CR>
 map <leader>o <Action>(GotoClass)
