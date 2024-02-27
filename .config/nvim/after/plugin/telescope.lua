@@ -44,3 +44,6 @@ end
 
 vim.keymap.set('n', '<leader>s', builtin.live_grep, {})
 vim.keymap.set("n", "<leader>p", M.project_files, {})
+vim.keymap.set('n', '<leader>.', function() builtin.find_files({ cwd = vim.fn.expand('%:p:h') }) end)
+
+vim.keymap.set("n", "<leader>g", builtin.git_commits, {})
