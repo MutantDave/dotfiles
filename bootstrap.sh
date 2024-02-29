@@ -27,6 +27,7 @@ install tpm
 install omz
 install npm
 install alacritty
+install java
 
 # install extras
 if [ "$extras" == true ]; then
