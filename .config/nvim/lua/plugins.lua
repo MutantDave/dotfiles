@@ -30,5 +30,6 @@ return {
     'rafamadriz/friendly-snippets',
   }},
   'nvim-tree/nvim-web-devicons',
-  'xiyaowong/nvim-transparent'
+  'xiyaowong/nvim-transparent',
+  'mfussenegger/nvim-jdtls'
 }
