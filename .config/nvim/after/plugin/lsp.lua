@@ -21,6 +21,9 @@ cmp.setup({
   }
 })
 
+lsp.configure('tsserver', {
+})
+
 lsp.configure('solidity', {
   settings = {
     solidity = {

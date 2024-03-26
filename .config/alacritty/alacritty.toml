@@ -11,6 +11,3 @@ title = ""
 [font]
 normal = {family = "FiraCode Nerd Font Mono", style = "Regular"}
 size = 18.0
-
-[mouse]
-hide_when_typing = true

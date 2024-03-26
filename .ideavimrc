@@ -33,6 +33,7 @@ map <leader>v :action SplitVertically<CR>
 map <leader>o <Action>(GotoClass)
 map <leader>s <Action>(GotoSymbol)
 map <leader>p <Action>(GotoFile)
+map gi <Action>(GotoImplementation)
 map <leader>r <Action>(Refactorings.QuickListPopupAction)
 map <leader>k <Action>(ShowErrorDescription)
 map <M-h> <Action>(PrevSplitter)

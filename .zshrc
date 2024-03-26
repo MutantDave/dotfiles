@@ -6,6 +6,7 @@ export PATH="$BREW_BIN:$HOME/.rbenv/shims:$HOME/.cargo/bin:$PATH"
 export HOMEBREW_NO_ENV_HINTS=true
 export HOMEBREW_NO_AUTO_UPDATE=1
 export EDITOR='nvim'
+export DOCKER_DEFAULT_PLATFORM=linux/amd64
 
 eval "$(starship init zsh)"
 
@@ -24,6 +25,7 @@ plugins=(
   aws
   macos
   vi-mode
+  git
 )
 
 source $ZSH/oh-my-zsh.sh
