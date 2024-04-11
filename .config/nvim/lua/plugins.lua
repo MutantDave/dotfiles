@@ -1,5 +1,6 @@
 return {
   {'nvim-telescope/telescope.nvim', dependencies = {'nvim-lua/plenary.nvim'}},
+  'tpope/vim-fugitive',
  'BurntSushi/ripgrep',
  'theprimeagen/harpoon',
  'preservim/nerdtree',
@@ -31,5 +32,5 @@ return {
   }},
   'nvim-tree/nvim-web-devicons',
   'xiyaowong/nvim-transparent',
-  'mfussenegger/nvim-jdtls'
+  'mfussenegger/nvim-jdtls',
 }

@@ -2,6 +2,9 @@ import = [
   "~/.config/alacritty/themes/themes/tokyo-night.toml"
 ]
 
+[shell]
+program = "/bin/zsh"
+
 [window]
 padding = { x = 4, y = 16 }
 option_as_alt = "Both"
@@ -10,4 +13,4 @@ title = ""
 
 [font]
 normal = {family = "FiraCode Nerd Font Mono", style = "Regular"}
-size = 18.0
+size = 14.0
