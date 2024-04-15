@@ -68,3 +68,7 @@ function get_az_token_stage {
 function get_az_token_prod {
   get_az_token c6685f24-2448-4556-bd93-c24f4d3a0b4b
 }
+
+function to_gif {
+  ffmpeg -y -i $1 -filter_complex "fps=10,split[s0][s1];[s0]palettegen=max_colors=32[p];[s1][p]paletteuse=dither=bayer" $2
+}
