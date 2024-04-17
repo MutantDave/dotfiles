@@ -72,3 +72,7 @@ function get_az_token_prod {
 function to_gif {
   ffmpeg -y -i $1 -filter_complex "fps=10,split[s0][s1];[s0]palettegen=max_colors=32[p];[s1][p]paletteuse=dither=bayer" $2
 }
+
+function youtube {
+  youtube-dl -x --audio-format mp3 $1
+}
