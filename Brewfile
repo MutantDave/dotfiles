@@ -27,5 +27,6 @@ brew 'yaml-language-server'
 brew 'zoxide'
 brew 'stow'
 brew 'cmake'
+brew 'bat'
 cask 'alacritty'
 

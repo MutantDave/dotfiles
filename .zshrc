@@ -7,6 +7,7 @@ export HOMEBREW_NO_ENV_HINTS=true
 export HOMEBREW_NO_AUTO_UPDATE=1
 export EDITOR='nvim'
 export DOCKER_DEFAULT_PLATFORM=linux/amd64
+export BAT_THEME="tokyonight_night"
 
 eval "$(starship init zsh)"
 
