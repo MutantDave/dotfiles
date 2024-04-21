@@ -1,3 +1,4 @@
+cask 'alacritty'
 brew "neovim"
 brew "tmux"
 brew "tree"
@@ -29,5 +30,4 @@ brew 'stow'
 brew 'cmake'
 brew 'bat'
 brew 'git-delta'
-cask 'alacritty'
-
+brew 'eza'

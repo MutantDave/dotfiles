@@ -34,7 +34,7 @@ source $HOME/.google-cloud-sdk/path.zsh.inc 2> /dev/null
 source $HOME/.google-cloud-sdk/completion.zsh.inc 2> /dev/null
 source $HOME/.privaterc 2> /dev/null
 
-alias ls='ls -Gla'
+alias ls='eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions'
 alias vim='nvim'
 alias t2='tree -L 2'
 alias lg='lazygit'
