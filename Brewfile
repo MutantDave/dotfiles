@@ -28,5 +28,6 @@ brew 'zoxide'
 brew 'stow'
 brew 'cmake'
 brew 'bat'
+brew 'git-delta'
 cask 'alacritty'
 

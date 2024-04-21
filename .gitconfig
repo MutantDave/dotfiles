@@ -4,17 +4,23 @@
 	name = Dave Henke
 	email = dave.henke@insightglobal.com
 [core]
+  pager = delta
 	excludesfile = ~/.gitignore_global
 [init]
 	defaultBranch = main
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+  navigate = true
+  side-by-side = true
 [commit]
 	template = ~/.stCommitMsg
 [advice]
 	addIgnoredFile = false
 [merge]
-	tool = nvimdiff
+  conflictStyle = diff3
 [diff]
-	tool = nvimdiff
+  colorMoved = default
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
