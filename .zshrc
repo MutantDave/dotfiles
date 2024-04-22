@@ -39,6 +39,7 @@ alias vim='nvim'
 alias t2='tree -L 2'
 alias lg='lazygit'
 alias :q='exit'
+alias cat='bat'
 
 eval "$(zoxide init --cmd cd zsh)"
 
