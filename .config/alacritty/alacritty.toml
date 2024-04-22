@@ -6,10 +6,11 @@ import = [
 program = "/bin/zsh"
 
 [window]
-padding = { x = 4, y = 16 }
+padding = { x = 2, y = 1 }
+dynamic_padding = true
 option_as_alt = "Both"
 dynamic_title = false
-title = ""
+title = "davefu"
 
 [font]
 normal = {family = "FiraCode Nerd Font Mono", style = "Regular"}
