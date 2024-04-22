@@ -36,6 +36,5 @@ return {
     'rafamadriz/friendly-snippets',
   }},
   'nvim-tree/nvim-web-devicons',
-  'xiyaowong/nvim-transparent',
   'mfussenegger/nvim-jdtls',
 }
