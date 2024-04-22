@@ -1,5 +1,6 @@
 vim.cmd([[filetype plugin indent on]])
 
+vim.o.termguicolors = true
 vim.g.mapleader = " "
 
 if vim.fn.exists("syntax_on") ~= 1 then
