@@ -41,6 +41,8 @@ alias lg='lazygit'
 alias :q='exit'
 alias cat='bat'
 
+
+eval "$(thefuck --alias fuq)"
 eval "$(zoxide init --cmd cd zsh)"
 
 function get_az_token {
